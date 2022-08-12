@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package errors;
+
+option go_package = "github.com/2516319251/boosters/errors;errors";
+
+message Status {
+  uint32 code = 1;
+  string message = 2;
+  map<string, string> metadata = 3;
+}
